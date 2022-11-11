@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.All
+{
+    background-color: rgb(206, 87, 176);
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+.All .First
+{
+    background-color: rgb(189, 133, 133);
+    padding: 20px;
+}
+.All .First .First-1
+{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 50%;
+    float: left;
+}
+.All .First .First-1-1
+{
+    position: relative;
+    background-color: rgb(51, 129, 192);
+}
+    .All .First .First-1-1 .Telent
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); /*A, B = X축, Y축 백분율의 기준은 자신*/
+        width: 200px;
+    }
+        .All .First .First-1-1 .Telent img
+        {
+            width: 100%;
+            display: block;
+        }
+        
+    .All .First .First-1-2
+    {
+        position: relative;
+        background-color: rgb(45, 175, 143);
+        overflow: hidden;
+    }
+        .All .First .First-1-2 .Telent2
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+            .All .First .First-1-2:hover .Telent2
+            {
+                transform: scale(1.2) rotate(360deg); /* 1,2 = 120% */
+            }
+                .All .First .First-1-2 .Telent2 img
+                {
+                    width: 100%;
+                }
+
+.All .First .First-end
+{
+    clear: both;
+}
+
+.All .Second
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    font-size: 50px;
+}
+    .All .Second .Video
+    {
+        position: absolute;
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+        .All .Second .Video Video
+        {
+            width: 100%;
+        }
+        .All .Second .ilust2
+        {
+            position: absolute;
+            width: 200px;
+            right: 5%;
+            top: 5%;
+            transform: rotate(0deg);
+        }
+        .All .Second .ilust2 svg
+        {
+            
+        }
+
+.All .Third
+{
+    position: relative;
+    height: 400px;
+}
+    .All .Third .ilust
+    {
+        position: absolute;
+        width: 300px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        opacity: 0;
+        transition: 0.3;
+    }
+    .All .Third:hover .ilust
+    {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    .All .Third .ilust svg
+    {
+
+    }
